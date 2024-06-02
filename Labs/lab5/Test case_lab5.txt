@@ -1,0 +1,39 @@
+These are the test cases I have used for both forwarding and non-forwarding--Note my code only runs if register in standard name
+starting with x 
+
+Test 1
+2
+add x0, x1, x2
+sub x4, x0, x3
+
+Test 2
+7
+add x14, x12, x11
+add x15, x14, x12
+ld x13, 8(x13)
+ld x12, 0(x14)
+and x13, x15, x13
+ld x11, 4(x13)
+sd x13, 0(x15)
+
+Test 3
+2
+ld x0, 0(x2)
+sub x4, x0, x3
+
+Test 4
+2
+add x0, x5, x0
+or x5, x6, x0
+
+Test 5
+2
+ld x11, 4(x13)
+sd x13, 0(x15)
+
+Test 6
+4
+add x15, x14, x12
+ld x13, 8(x13)
+ld x12, 0(x14)
+and x13, x15, x13
